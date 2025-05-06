@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    background-color: #7e3333; /* Bordo */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    background: #f0e6e6; /* Fondo suave */
+}
+main{
+    max-width: 100%;
+    display: flex;
+    max-height: 100vh;
+    padding: 25px;
+    font-size: 20px;
+}
+.izquierdabody{
+    background: #d9b3b3; /* Color suave que combina con bordo */
+}
+.derechabody , .izquierdabody{
+    border: solid black 2px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 50%;
+    padding: 20px;
+}
+.derechabody{
+    background: #e6cccc; /* Color suave que combina con bordo */
+ 
+}
+.barra{
+    border: solid black 2px;
+    background-color: #7e3333; /* Bordo */
+    height: 82vh;
+    flex: 1;
+    display: fixed;
+    max-width: 25%;
+}
+.barra h3{
+    font-size: 30px;
+} 
+.barra p{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    background: #963e3e; /* Bordo más claro */
+    font-size: 20px;
+}
+.barra p:hover{
+    background: #ce4646; /* Bordo más claro */
+}
+.cuerpo{
+    display: flex;
+    background: #b36b6b; /* Color suave que combina con bordo */
+    display: flex;
+}
+table{
+    border-collapse: collapse;
+    min-width: 50%;
+    max-width: 100%;
+    background: white;
+}
+td{
+    border: #333 1px solid;
+    text-align: center;
+    padding: 8px;
+}
+.login{
+    background: #e6cccc; /* Color suave que combina con bordo */
+    border: solid black 2px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 50%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alineador{
+    display: flex;
+    justify-content: space-around;
+}
+/* Caja principal */
+.subconte{
+    text-align: center;
+    max-width: 100%;
+    min-width: 40%;
+    background-color: #c38989;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Info personal */
+.infopersonal{
+    border: solid black 2px;
+    border-radius: 15%;
+    background: white;
+    font-size: 18px;
+    padding: 15px;
+    text-align: left;
+}
+/* Partes del calendario */
+.cu-calenda{
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid black;  
+    text-decoration: none;
+    color:black; 
+    background-color: rgb(255, 255, 255); 
+    padding: 10px;
+}
+.flechas{
+    color: black;
+    text-decoration: none;
+}
+.calendar { 
+    display: inline-block;
+    margin-top: 20px; 
+}
+.month {
+    font-size: 24px; 
+    font-weight: bold; 
+}
+.days { 
+    display: grid; 
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 5px; 
+    margin-top: 10px; 
+}
+.day { 
+    padding: 10px;
+    border: 1px solid #b9b9b9; 
+    cursor: pointer; 
+    position: relative; 
+}
+.day:hover { 
+    color: white; 
+    background-color:rgb(115, 37, 37); 
+}
+.icon { 
+    position: absolute; 
+    bottom: 5px; 
+    right: 5px; 
+    font-size: 10px; 
+}
+/* Formulario de carga de asistencias */
+
+.cargapre {
+    background-color: white;
+    color: #800020; /* Bordó */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cargapre p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cargapre select, input[type="file"], input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #800020;
+    border-radius: 5px;
+    background-color: white;
+    color: #800020;
+    font-size: 16px;
+}
+
+.cargapre input[type="submit"] {
+    background-color: #800020;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cargapre input[type="submit"]:hover {
+    background-color: #600015;
+}
+
+.yaestacargado{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: white;
+    font-size: 20px;
+}
+
+/* Historial de asistencias */
+
+.tabla-container {
+    height: 60vh;
+    overflow-y: auto;  
+    border: 1px solid #ccc; 
+    margin: 0px 0;
+}
+.historialdeasistencias-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+}
+.historialdeasistencias-th, .historialdeasistencias-td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+.historialdeasistencias-th {
+    background-color: #007BFF;
+    color: white;
+}
+.historialdeasistencias-tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.historialdeasistencias-presente {
+    color: green;
+    font-weight: bold;
+}
+.historialdeasistencias-ausente {
+    color: red;
+    font-weight: bold;
+}
+.historialdeasistencias-noasistencia {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+.search{
+    background: white;
+    padding: 5%;
+    border: gray solid 2px;
+}
+.search form {
+    display: flex;
+}
+/* Generador de evaluaciones */
+.geeva-form {
+    background: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.geeva-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.geeva-group {
+    margin-bottom: 15px;
+}
+
+.geeva-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.geeva-input, .geeva-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.geeva-textarea {
+    resize: vertical;
+    height: 60px;
+}
+
+.geeva-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.geeva-button:hover {
+    background-color: #0052a3;
+}
+
+.geeva-add {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.geeva-add button {
+    background: none;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.geeva-add button:hover {
+    text-decoration: underline;
+}
